@@ -1,0 +1,31 @@
+{
+  "name": "l8_nodebase",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r dotenv/config index.js dotenv_config_path=.env.development",
+    "build": "node -r dotenv/config index.js dotenv_config_path=.env.production",
+    "deploy": "node -r dotenv/config index.js dotenv_config_path=.env.domain",
+    "dev": "nodemon -r dotenv/config index.js dotenv_config_path=.env.development",
+    "bcrypt": "node src/bcryptDemo.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filkofilipp-ohno/L8_NodeBase.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/filkofilipp-ohno/L8_NodeBase/issues"
+  },
+  "homepage": "https://github.com/filkofilipp-ohno/L8_NodeBase#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
